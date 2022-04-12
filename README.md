@@ -1,5 +1,5 @@
 ### CI badge
-![Node CI](https://github.com/ErKir/backend-project-lvl1/actions/workflows/Node%20CI/badge.svg?)
+![Node CI](https://github.com/ErKir/backend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg?)
 
 ![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
 
