@@ -1,3 +1,7 @@
+### CI badge
+![Node CI](https://github.com/ErKir/backend-project-lvl1/actions/workflows/Node%20CI/badge.svg?
+event=push)
+
 ![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
 
 ### Hexlet tests and linter status:
