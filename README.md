@@ -1,7 +1,5 @@
-### CI badge
-![Node CI](https://github.com/ErKir/backend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg?)
-
-![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
+### CI status
+![Node CI](https://github.com/ErKir/backend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg?event=push)
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ErKir/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ErKir/backend-project-lvl1/actions)
