@@ -32,8 +32,7 @@ const gameEngine = (answerCount) => {
     return true;
   }
   let counter = answerCount;
-  console.log(`randomNumb = = = ${randomNumb}`);
-  const answer = readlineSync.question(`Question: ${ randomNumb }`);
+  const answer = readlineSync.question(`Question: ${ randomNumb }--> `);
   console.log(`Your answer: ${ answer }!`);
   if (isEven(randomNumb) === 'yes' && answer === 'yes') {
     counter -= 1;
@@ -45,7 +44,7 @@ const gameEngine = (answerCount) => {
     console.log('Correct!');
     return gameEngine(counter);
   }
-  console.log(`is wrong answer;(.
+  console.log(`Uh, no! Is wrong answer;(.
     Correct answer was ${isEven(randomNumb)}. Let 's try again, ${userName}!!`);
   return true;
 };
