@@ -50,7 +50,7 @@ const gameEngine = (answerCount) => {
     default:
       console.log('case Error');
   }
-  if (answer === trueAnswer) {
+  if (parseInt(answer, 10) === trueAnswer) {
     counter -= 1;
     console.log('Correct!');
     return gameEngine(counter);
