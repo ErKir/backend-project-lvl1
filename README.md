@@ -8,4 +8,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
-[![asciicast](https://asciinema.org/a/T21fCwgmmoJ5OJKhLekxxkAsl.svg)](https://asciinema.org/a/T21fCwgmmoJ5OJKhLekxxkAsl)
+### Asciinema
+
+1. [brain-even](https://asciinema.org/a/T21fCwgmmoJ5OJKhLekxxkAsl)
+2. [brain-calc](https://asciinema.org/a/489152)
