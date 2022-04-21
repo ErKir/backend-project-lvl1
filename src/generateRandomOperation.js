@@ -7,7 +7,6 @@ const getRandomIntInclusive = (min, max) => {
   const roundMin = Math.ceil(min);
   const roundMax = Math.floor(max);
   return Math.floor(Math.random() * (roundMax - roundMin + 1)) + roundMin;
-  //Максимум и минимум включаются
 };
 
 const getRandomOperation = () => {
