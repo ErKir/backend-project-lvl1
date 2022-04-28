@@ -4,8 +4,8 @@
 
 
 import readlineSync from 'readline-sync';
-import getRandomInt from '../src/generateRandomNumb.js';
-import getRandomOperation from '../src/generateRandomOperation.js';
+import getRandomInt from '../../src/generateRandomNumb.js';
+import getRandomOperation from '../../src/generateRandomOperation.js';
 
 // minimum number, use only integer number
 const minNumb = 1;
@@ -23,12 +23,12 @@ const askName = () => {
 
 console.log("Welcome to the Brain Games!");
 askName();
-console.log('What is the result of the expression?');
 
 const gameEngine = (answerCount) => {
   const randomNumb1 = getRandomInt(minNumb, maxNumb);
   const randomNumb2 = getRandomInt(minNumb, maxNumb);
   const operation = getRandomOperation();
+  console.log('What is the result of the expression?');
   if (answerCount === 0) {
     console.log(`Congratulations, ${userName}!`);
     return true;
