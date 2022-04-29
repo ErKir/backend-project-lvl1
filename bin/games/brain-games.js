@@ -2,7 +2,7 @@
 
 /* eslint-disable import/extensions */
 
-import askName from '../../src/cli';
+import askName from '../../src/cli.js';
 
 console.log("Welcome to the Brain Games!");
 askName();
