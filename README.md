@@ -14,3 +14,4 @@
 
 1. [brain-even](https://asciinema.org/a/T21fCwgmmoJ5OJKhLekxxkAsl)
 2. [brain-calc](https://asciinema.org/a/489152)
+3. [brain-gcd](https://asciinema.org/a/2zkEHiEEtDERt2iUOdOgexO2T)
