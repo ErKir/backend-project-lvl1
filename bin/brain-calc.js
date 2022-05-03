@@ -4,6 +4,6 @@
 
 import {
   game
-} from '../src/calcGame.js';
+} from '../src/games/calcGame.js';
 
 game();

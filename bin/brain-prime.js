@@ -4,6 +4,7 @@
 
 import {
   game
-} from '../primeGame.js';
+}
+from '../src/games/primeGame.js';
 
 game();

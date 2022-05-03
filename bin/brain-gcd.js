@@ -4,6 +4,7 @@
 
 import {
   game
-} from '../gcdGame';
+}
+from '../src/games/gcdGame';
 
 game();

@@ -4,6 +4,7 @@
 
 import {
   game
-} from '../progressionGame.js';
+}
+from '../src/games/progressionGame.js';
 
 game();

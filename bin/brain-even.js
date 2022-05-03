@@ -4,6 +4,7 @@
 
 import {
   game
-} from '../evenGame.js';
+}
+from '../src/games/evenGame.js';
 
 game();
