@@ -5,11 +5,17 @@
 import {
   cons,
 } from '@hexlet/pairs';
-import getRandomInt from './generateRandomNumb.js';
-import gcd from './gcdFind.js';
+import getRandomInt from '../generateRandomNumb.js';
 import {
-  gameEngine
-} from './index.js';
+  gameEngine,
+} from '../index.js';
+
+const gcdFind = (num1, num2) => {
+  if (!num2) {
+    return num1;
+  }
+  return gcdFind(num2, num1 % num2);
+};
 
 // minimum number, use only integer number
 const minNumb = 1;
@@ -25,13 +31,11 @@ const game = () => {
     const randomNumb1 = getRandomInt(minNumb, maxNumb);
     const randomNumb2 = getRandomInt(minNumb, maxNumb);
     const question = `${randomNumb1}  ${randomNumb2}`;
-    const answer = gcd(randomNumb1, randomNumb2);
+    const answer = gcdFind(randomNumb1, randomNumb2);
     const data = cons(question, answer);
     gameData = [...gameData, data];
   };
   return gameEngine(cons(gameData, rulesOfGame));
 };
 
-export {
-  game
-};
+export default game;

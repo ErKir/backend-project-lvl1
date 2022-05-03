@@ -4,6 +4,6 @@
 
 import {
   game
-} from '../../src/gcdGame.js';
+} from '../evenGame.js';
 
 game();

@@ -6,11 +6,46 @@ import {
   cons,
 } from '@hexlet/pairs';
 import getRandomInt from './generateRandomNumb.js';
-import getRandomOperation from './generateRandomOperation.js';
-import calculator from './calculator.js';
 import {
   gameEngine
-} from './index.js';
+} from '../index.js';
+
+const calculator = (num1, num2, operation) => {
+  let result;
+  switch (operation) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    default:
+      console.log('calculate Error');
+  }
+  return result;
+};
+
+// get random operation
+const operations = ['+', '-', '*'];
+
+const minimum = 0;
+const maximum = operations.length - 1;
+
+const getRandomIntInclusive = (min, max) => {
+  const roundMin = Math.ceil(min);
+  const roundMax = Math.floor(max);
+  return Math.floor(Math.random() * (roundMax - roundMin + 1)) + roundMin;
+};
+
+const getRandomOperation = () => {
+  const i = getRandomIntInclusive(minimum, maximum);
+  const operation = operations[i];
+  return operation;
+};
+
 
 // minimum number, use only integer number
 const minNumb = 1;
@@ -34,6 +69,4 @@ const game = () => {
   return gameEngine(cons(gameData, rulesOfGame));
 };
 
-export {
-  game
-};
+export default game;

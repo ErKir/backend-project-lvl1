@@ -4,6 +4,6 @@
 
 import {
   game
-} from '../../src/progressionGame.js';
+} from '../primeGame.js';
 
 game();

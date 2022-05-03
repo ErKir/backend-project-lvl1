@@ -4,6 +4,6 @@
 
 import {
   game
-} from '../../src/primeGame.js';
+} from '../gcdGame';
 
 game();

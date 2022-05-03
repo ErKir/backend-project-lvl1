@@ -5,34 +5,32 @@
 import {
   cons,
 } from '@hexlet/pairs';
-import getRandomInt from './generateRandomNumb.js';
-import isPrime from './isPrime.js';
+import getRandomInt from '../generateRandomNumb.js';
 import {
   gameEngine
-} from './index.js';
+} from '../index.js';
 
-// minimum number is 2, because A prime number is a natural number greater than 1!
-const minNumb = 2;
+const getEven = (number) => number % 2 === 0;
 
+const isEven = (n) => getEven(n) ? 'yes' : 'no';
+
+// minimum number, use only integer number
+const minNumb = 1;
 // maximum number, use only integer number
 const maxNumb = 100;
-
 // number of round in the game
 const numberOfRound = 3;
-
-const rulesOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const rulesOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const game = () => {
   let gameData = [];
   for (let i = 0; i < numberOfRound; i += 1) {
     const question = getRandomInt(minNumb, maxNumb);
-    const answer = isPrime(question);
+    const answer = isEven(question);
     const data = cons(question, answer);
     gameData = [...gameData, data];
   };
   return gameEngine(cons(gameData, rulesOfGame));
 };
 
-export {
-  game
-};
+export default game;

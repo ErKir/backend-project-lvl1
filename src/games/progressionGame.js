@@ -5,11 +5,20 @@
 import {
   cons,
 } from '@hexlet/pairs';
-import getRandomInt from './generateRandomNumb.js';
-import generateProgression from './progression.js';
+import getRandomInt from '../generateRandomNumb.js';
 import {
   gameEngine
-} from './index.js';
+} from '../index.js';
+
+// progression func
+const generateProgression = (startNum, step, numberOfItems) => {
+  let progression = [startNum];
+  for (let i = 0; i < numberOfItems; i += 1) {
+    const newItem = progression[i] + step;
+    progression = [...progression, newItem];
+  }
+  return progression;
+};
 
 // number of round in the game
 const numberOfRound = 3;
@@ -42,6 +51,4 @@ const game = () => {
   return gameEngine(cons(gameData, rulesOfGame));
 };
 
-export {
-  game
-};
+export default game;

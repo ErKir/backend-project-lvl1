@@ -8,7 +8,6 @@ import {
   cdr
 } from '@hexlet/pairs';
 
-// const randomNumb = getRandomInt(minNumb, maxNumb);
 let userName = '';
 
 const askName = () => {
@@ -20,7 +19,7 @@ const askName = () => {
 askName();
 
 
-const gameEngine = (game) => {
+export default (game) => {
   const gameData = car(game);
   const rulesOfGame = cdr(game);
   console.log(`${ rulesOfGame }`);
@@ -39,8 +38,4 @@ const gameEngine = (game) => {
     }
   }
   console.log(`Congratulations, ${userName}!`);
-};
-
-export {
-  gameEngine
 };

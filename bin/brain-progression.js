@@ -4,6 +4,6 @@
 
 import {
   game
-} from '../../src/evenGame.js';
+} from '../progressionGame.js';
 
 game();
