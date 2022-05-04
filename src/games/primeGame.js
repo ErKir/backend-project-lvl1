@@ -30,20 +30,13 @@ const minNumb = 2;
 // maximum number, use only integer number
 const maxNumb = 100;
 
-// number of round in the game
-const numberOfRound = 3;
-
 const rulesOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const game = () => {
-  let gameData = [];
-  for (let i = 0; i < numberOfRound; i += 1) {
-    const question = getRandomInt(minNumb, maxNumb);
-    const answer = isPrime(question);
-    const data = cons(question, answer);
-    gameData = [...gameData, data];
-  };
-  return gameEngine(cons(gameData, rulesOfGame));
+const roundOfGame = () => {
+  const question = getRandomInt(minNumb, maxNumb);
+  const answer = isPrime(question);
+  const gameData = cons(question, answer);
+  return gameData;
 };
 
-export default game;
+export default () => gameEngine(roundOfGame, rulesOfGame);

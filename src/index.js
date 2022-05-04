@@ -8,25 +8,22 @@ import {
   cdr
 } from '@hexlet/pairs';
 
-let userName = '';
+// number of round in the game
+const maxNumberOfRound = 3;
 
-const askName = () => {
+const gameEngine = (roundOfGame, rulesOfGame) => {
+
+  // Greeting
   console.log("Welcome to the Brain Games!");
-  userName = readlineSync.question('May I have your name? ');
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${  userName  }!`);
-};
-
-askName();
-
-
-export default (game) => {
-  const gameData = car(game);
-  const rulesOfGame = cdr(game);
   console.log(`${ rulesOfGame }`);
-  for (let i = 0; i <= gameData.length - 1; i += 1) {
-    const data = gameData[i];
-    const question = car(data);
-    const trueAnswer = cdr(data).toString();
+
+  // game loop
+  for (let numberOfRound = 1; numberOfRound <= maxNumberOfRound; numberOfRound += 1) {
+    const round = roundOfGame();
+    const question = car(round);
+    const trueAnswer = cdr(round).toString();
     console.log(`Question: ${ question }`);
     const userAnswer = readlineSync.question(`Your answer: `);
     if (userAnswer === trueAnswer) {
@@ -39,3 +36,5 @@ export default (game) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
+
+export default gameEngine;

@@ -5,7 +5,7 @@
 import {
   cons,
 } from '@hexlet/pairs';
-import getRandomInt from './generateRandomNumb.js';
+import getRandomInt from '../generateRandomNumb.js';
 import {
   gameEngine
 } from '../index.js';
@@ -31,8 +31,8 @@ const calculator = (num1, num2, operation) => {
 // get random operation
 const operations = ['+', '-', '*'];
 
-const minimum = 0;
-const maximum = operations.length - 1;
+const firstIndexOfOperations = 0;
+const lastIndexOfOperations = operations.length - 1;
 
 const getRandomIntInclusive = (min, max) => {
   const roundMin = Math.ceil(min);
@@ -41,8 +41,8 @@ const getRandomIntInclusive = (min, max) => {
 };
 
 const getRandomOperation = () => {
-  const i = getRandomIntInclusive(minimum, maximum);
-  const operation = operations[i];
+  const randomIndex = getRandomIntInclusive(firstIndexOfOperations, lastIndexOfOperations);
+  const operation = operations[randomIndex];
   return operation;
 };
 
@@ -51,22 +51,17 @@ const getRandomOperation = () => {
 const minNumb = 1;
 // maximum number, use only integer number
 const maxNumb = 100;
-// number of round in the game
-const numberOfRound = 3;
+
 const rulesOfGame = 'What is the result of the expression?';
 
-const game = () => {
-  let gameData = [];
-  for (let i = 0; i < numberOfRound; i += 1) {
-    const randomNumb1 = getRandomInt(minNumb, maxNumb);
-    const randomNumb2 = getRandomInt(minNumb, maxNumb);
-    const operation = getRandomOperation();
-    const question = `${randomNumb1} ${operation} ${randomNumb2}`;
-    const answer = calculator(randomNumb1, randomNumb2, operation);
-    const data = cons(question, answer);
-    gameData = [...gameData, data];
-  };
-  return gameEngine(cons(gameData, rulesOfGame));
+const roundOfGame = () => {
+  const randomNumb1 = getRandomInt(minNumb, maxNumb);
+  const randomNumb2 = getRandomInt(minNumb, maxNumb);
+  const operation = getRandomOperation();
+  const question = `${randomNumb1} ${operation} ${randomNumb2}`;
+  const answer = calculator(randomNumb1, randomNumb2, operation);
+  const gameData = cons(question, answer);
+  return gameData;
 };
 
-export default game;
+export default () => gameEngine(roundOfGame, rulesOfGame);
