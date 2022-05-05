@@ -39,4 +39,4 @@ const roundOfGame = () => {
   return gameData;
 };
 
-export default () => gameEngine(roundOfGame, rulesOfGame);
+export const game = () => gameEngine(roundOfGame, rulesOfGame);

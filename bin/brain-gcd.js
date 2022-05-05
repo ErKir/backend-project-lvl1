@@ -5,6 +5,6 @@
 import {
   game
 }
-from '../src/games/gcdGame';
+from '../src/games/gcdGame.js';
 
 game();

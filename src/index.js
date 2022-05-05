@@ -8,10 +8,10 @@ import {
   cdr
 } from '@hexlet/pairs';
 
-// number of round in the game
-const maxNumberOfRound = 3;
 
 const gameEngine = (roundOfGame, rulesOfGame) => {
+  // number of round in the game
+  const maxNumberOfRound = 3;
 
   // Greeting
   console.log("Welcome to the Brain Games!");
@@ -37,4 +37,6 @@ const gameEngine = (roundOfGame, rulesOfGame) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default gameEngine;
+export {
+  gameEngine
+};
