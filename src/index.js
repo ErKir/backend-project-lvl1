@@ -37,6 +37,4 @@ const gameEngine = (roundOfGame, rulesOfGame) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export {
-  gameEngine
-};
+export default gameEngine;

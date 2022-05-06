@@ -5,10 +5,8 @@
 import {
   cons,
 } from '@hexlet/pairs';
+import gameEngine from '../index.js';
 import getRandomInt from '../generateRandomNumb.js';
-import {
-  gameEngine
-} from '../index.js';
 
 const getEven = (number) => number % 2 === 0;
 
@@ -28,4 +26,6 @@ const roundOfGame = () => {
   return gameData;
 };
 
-export const game = () => gameEngine(roundOfGame, rulesOfGame);
+const game = () => gameEngine(roundOfGame, rulesOfGame);
+
+export default game;

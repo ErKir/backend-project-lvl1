@@ -2,9 +2,6 @@
 
 /* eslint-disable import/extensions */
 
-import {
-  game
-}
-from '../src/games/evenGame.js';
+import game from '../src/games/evenGame.js';
 
 game();

@@ -6,9 +6,7 @@ import {
   cons,
 } from '@hexlet/pairs';
 import getRandomInt from '../generateRandomNumb.js';
-import {
-  gameEngine,
-} from '../index.js';
+import gameEngine from '../index.js';
 
 const gcdFind = (num1, num2) => {
   if (!num2) {
@@ -33,4 +31,6 @@ const roundOfGame = () => {
   return gameData;
 };
 
-export const game = () => gameEngine(roundOfGame, rulesOfGame);
+const game = () => gameEngine(roundOfGame, rulesOfGame);
+
+export default game;

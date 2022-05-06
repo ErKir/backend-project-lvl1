@@ -2,9 +2,6 @@
 
 /* eslint-disable import/extensions */
 
-import {
-  game
-}
-from '../src/games/progressionGame.js';
+import game from '../src/games/progressionGame.js';
 
 game();

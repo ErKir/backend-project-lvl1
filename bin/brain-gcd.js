@@ -2,9 +2,6 @@
 
 /* eslint-disable import/extensions */
 
-import {
-  game
-}
-from '../src/games/gcdGame.js';
+import game from '../src/games/gcdGame.js';
 
 game();
