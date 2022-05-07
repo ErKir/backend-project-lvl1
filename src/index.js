@@ -28,7 +28,7 @@ const gameEngine = (roundOfGame, rulesOfGame) => {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(.
-    Correct answer was '${trueAnswer}'. Let 's try again, ${userName}!!`);
+    Correct answer was '${trueAnswer}'. Let's try again, ${userName}!!`);
       return;
     }
   }
