@@ -42,7 +42,6 @@ const getRandomOperation = () => {
   return operation;
 };
 
-
 // minimum number, use only integer number
 const minNumb = 1;
 // maximum number, use only integer number
