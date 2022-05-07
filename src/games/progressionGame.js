@@ -34,8 +34,9 @@ const roundOfGame = () => {
   const randomItem = getRandomInt(0, numbOfItems);
   const answer = progression[randomItem];
   progression[randomItem] = '..';
-
-  const question = `${progression.toString()}`;
+  const progressionToString = progression.toString().replace(/,/g, ' ');
+  console.log(`progressionToString == ${progressionToString}`);
+  const question = `${progressionToString}`;
   const gameData = cons(question, answer);
   return gameData;
 };
