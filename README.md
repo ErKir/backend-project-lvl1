@@ -6,7 +6,7 @@
 
 ## Get started
 
-Clone the repository -> use `make install` command. Thereafter use `npm link`.
+Clone the repository and use `make install` command. Thereafter use `npm link`.
 
 ## Games
 
