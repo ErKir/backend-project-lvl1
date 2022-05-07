@@ -2,17 +2,11 @@
 
 ## Simple console Games with basic arithmetics
 
--------------------------------------------------------------------------------------------------
-
 [![Node CI](https://github.com/ErKir/backend-project-lvl1/workflows/Node_CI/badge.svg?event=push)](https://github.com/ErKir/backend-project-lvl1/actions/workflows/github-actions-demo.yml) [![Actions Status](https://github.com/ErKir/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ErKir/backend-project-lvl1/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/b44592ad75837c96c7a5/maintainability)](https://codeclimate.com/github/ErKir/backend-project-lvl1/maintainability)
-
--------------------------------------------------------------------------------------------------
 
 ## Get started
 
 Clone the repository -> use `make install` command. Thereafter use `npm link`.
-
--------------------------------------------------------------------------------------------------
 
 ## Games
 
