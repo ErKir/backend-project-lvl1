@@ -23,7 +23,7 @@ const rulesOfGame = 'Find the greatest common divisor of given numbers.';
 const roundOfGame = () => {
   const randomNumb1 = getRandomInt(minNumb, maxNumb);
   const randomNumb2 = getRandomInt(minNumb, maxNumb);
-  const question = `${randomNumb1}  ${randomNumb2}`;
+  const question = `${randomNumb1} ${randomNumb2}`;
   const answer = gcdFind(randomNumb1, randomNumb2);
   const gameData = cons(question, answer);
   return gameData;
