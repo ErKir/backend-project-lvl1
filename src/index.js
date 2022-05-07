@@ -22,12 +22,12 @@ const gameEngine = (roundOfGame, rulesOfGame) => {
     const question = car(round);
     const trueAnswer = cdr(round).toString();
     console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question(`Your answer: `);
+    const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === trueAnswer) {
       console.log('Correct!');
     } else {
       console.log(`${userAnswer} is wrong answer ;(.
-    Correct answer was ${trueAnswer}. Let's try again, ${userName}!!`);
+    Correct answer was '${trueAnswer}'. Let's try again, ${userName}!!`);
       return;
     }
   }
